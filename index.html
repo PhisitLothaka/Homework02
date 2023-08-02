@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab01</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        }
+        .container{
+            display: inline-block;
+            position: relative;
+            border: 1px solid black;
+            width: 200px;
+            height: 260px;
+            border-radius: 8px;
+            margin: 20px;
+            box-shadow: 2px 2px 8px rgb(177, 176, 176);
+        }
+        .container b{
+            position: relative;
+            left: 5px;
+
+        }
+        .person{
+            border-bottom: 1px solid black;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+        }
+        .myname p{
+            /* margin: 3px; */
+            text-align: center;
+            font-size: 30px;
+        }
+        .non{
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            right: -20px;
+            /* left:200px ; */
+            top: -15px;
+            border-radius: 50%;
+            background-color: red;
+            z-index: 2;
+        }
+        .non  p{
+            color: white;
+            text-align: center;
+            margin: 8px;
+            font-size: 20px;
+        }
+
+        /* challenge */
+        .card{
+            border: 1px solid black;
+            border-radius: 8px;
+            box-shadow: 2px 2px 8px rgb(177, 176, 176);
+            display: inline-block;
+            width: 200px;
+            height: 260px;
+            position: relative;
+            top: -17px;
+        }
+        .card > img{
+            width: 200px;
+            height: 200px;
+        }
+        .card > h4{
+            text-align: center;
+            padding: 15px;  
+            border-top: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="non">
+                <p>7</p>
+            </div>
+        <div class="person">
+            <b>&#10005;</b>
+            
+            <img src="./pic/person.svg" alt="person">
+        </div>
+        <div class="myname">
+            <p>Ten</p>
+        </div>
+    </div>
+
+    <!-- challenge -->
+    <div class="card">
+        <img src="./pic/human-man-10.svg" alt="profile">
+        <h4>A.Rudiger</h4>
+    </div>
+    
+    
+</body>
+</html>
